@@ -1,0 +1,283 @@
+@media screen and (max-width: 768px) {
+  #navbar ul li a {
+    float: none;
+    display: none;
+  }
+}
+
+#navbar {
+  flex-direction: column;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  overflow: auto;
+
+}
+
+#navcontent {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+
+  @media screen and (max-width : 768px){
+    text-align: center;
+    display: block;
+  }
+}
+
+.left {
+  margin-right: auto;
+}
+
+.right {
+  margin-left: auto;
+
+  @media screen and (max-width : 768px){
+    margin: 0;
+    
+  }
+}
+
+#navcontent li a {
+  color: white;
+  text-decoration: none;
+
+}
+
+ul li {
+  list-style: none;
+  border-radius: 20px;
+
+}
+
+.search{
+  @media screen and (max-width : 768px){
+    text-align: center;
+  }
+}
+
+ul li a {
+  padding: 1px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+
+}
+
+.top {
+  background-color: rgb(53, 79, 102);
+  margin: -10px;
+  padding: 10px 30px 20px 30px;
+  max-width: 95vw;
+}
+
+.middle {
+  background-color: rgb(228, 230, 216);
+  margin: -10px;
+  padding: 10px 30px 20px 30px;
+  max-width: 95vw;
+}
+
+.end {
+  background-color: rgb(226, 221, 215);
+  margin: -10px;
+  padding: 10px 30px 20px 30px;
+  max-width: 95vw;
+}
+
+.container {
+  display: flex;
+  margin: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width : 768px){
+    flex-direction: column;
+  }
+}
+.verse{
+  color: bisque;
+  font-size: x-large;
+
+  @media screen and (max-width : 768px){
+    margin : 0 80px 0 0;
+  }
+}
+.head {
+  flex: 6;
+  font-size: x-large;
+  color: white;
+
+  @media screen and (max-width : 768px){
+    font-size: 20px;
+  }
+}
+
+.head1 {
+  flex: 6;
+
+  @media screen and (max-width : 768px){
+    width : 75%;
+    /* margin : 0 0 0 10%; */
+  }
+}
+
+.head2 {
+  font-size: x-large;
+}
+
+.email {
+  border-radius: 5px;
+  border-style: none;
+  padding: 10px;
+  font-weight: 600;
+
+  @media screen and (max-width : 768px){
+
+  }
+}
+
+.subbtn {
+  margin-left: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(212, 150, 57);
+
+  @media screen and (max-width : 768px){
+    /* margin : 20px 0 0 50px;
+    text */
+    margin : 10px 0 0 0;
+  }
+}
+
+.rand {
+  font-size: medium;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, fr);
+  /* By default, one column for small screens */
+  gap: 10px;
+}
+
+.grid-item {
+  padding: 10px;
+  margin: 30px;
+
+  @media screen and (max-width : 768px){
+    margin : 10px;
+    padding : 0px;
+  }
+}
+
+.big-number {
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding: 10px;
+
+  @media screen and (max-width : 768px){
+    padding : 0px;
+  }
+}
+
+.text{
+  @media screen and (max-width : 768px){
+    margin : 8px 0 0 0;
+    font-size: 4vw;
+  }
+}
+
+.number-box {
+  width: 60px;
+  height: 60px;
+  background-color: #f0f2f3;
+  color: #312929;
+  font-size: 36px;
+  text-align: center;
+  line-height: 60px;
+  margin: 10px;
+
+  @media screen and (max-width : 768px){
+    margin : 0px;
+  }
+  /* Add some margin around the number boxes */
+}
+
+.subtext{
+  @media screen and (max-width : 768px){
+    margin : 10px 0 20px 0;
+  }
+}
+
+.text-lines {
+  margin-top: -10px;
+
+  @media screen and (max-width : 768px){
+    margin : 0 0 0 10px;
+  }
+}
+
+.end-head {
+  color: rgb(220, 181, 121);
+  margin-left: 8px;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns for medium-sized screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 6fr);
+    /* Two columns with a width of 6 units each for large screens */
+  }
+}
+
+.grid-container-end {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+
+.grid-item-end {
+  text-align: center;
+  padding: 10px;
+}
+
+.grid-item-end img {
+  max-width: 100%;
+  /* height: auto; */
+  height: 75%;
+}
+
+.grid-item-end p {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .grid-container-end {
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns for medium-sized screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container-end {
+    grid-template-columns: repeat(6, 1fr);
+    /* Three columns for larger screens */
+  }
+}
